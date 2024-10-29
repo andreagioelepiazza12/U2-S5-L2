@@ -8,9 +8,9 @@ body {
   background-position: center center;
 }
 
-#socialLink,
-#calendarLink,
-#backToTop {
+.social,
+.calendar,
+.backToTop {
     position: fixed;
     right: 20px;
     width: 100px;
@@ -27,7 +27,7 @@ body {
     backdrop-filter: blur(5px); 
 }
 
-#backToTop {
+.backToTop {
   bottom: 20px;
   background-color: rgba(255, 255, 255, 0.7); 
   color: white;
@@ -35,21 +35,21 @@ body {
 
 
 
-#socialLink {
+.socialLink {
     bottom: 140px; 
 }
 
 
-#calendarLink {
+.calendarLink {
     bottom: 70px; 
 }
 
-#socialLink:hover,
-#calendarLink:hover {
+.socialLink:hover,
+.calendarLink:hover {
     background-color: rgba(255, 255, 255, 0.9); 
 }
 
-#backToTop:hover {
+.backToTop:hover {
   background-color: rgba(148, 0, 211, 0.9); 
 }
 
@@ -466,40 +466,40 @@ footer a {
 }
 
 @media (min-width: 700px) {
-  #socialLink {
+  .social {
       top: 20%; /* Posizionato in alto */
       right: 20px;
       bottom: 70%;
   }
 
-  #calendarLink {
+  .calendar {
       top: 60%; /* Posizionato sotto "Social" */
       bottom: 30%;
       right: 20px;
       
   }
 
-  #backToTop {
+  .backToTop {
       bottom: 20px; /* Posizionato in basso */
       right: 20px;
   }
 }
 
 @media (max-width: 699px) {
-  #socialLink,
-  #calendarLink,
-  #backToTop {
+  .social,
+  .calendar,
+  .backToTop {
       bottom: 20px; /* Tutti i pulsanti in basso */
       right: 20px;
       width: 100px;
       margin-bottom: 10px; /* Spazio tra i pulsanti */
   }
 
-  #socialLink {
+  .social {
       bottom: 70px; /* Posizionato sopra "Torna in cima" */
   }
 
-  #calendarLink {
+  .calendar {
       bottom: 140px; /* Posizionato sopra "Social" */
   }
 }
